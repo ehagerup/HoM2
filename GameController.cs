@@ -18,7 +18,7 @@ public class GameController : MonoBehaviour
     public float timeRemaining = 16f;
     Text timer;
 
-    public int[] allowedNumbers = new int[] { 2,4,6 } ;
+ 
 
     public GameObject numberPrefab;
 
@@ -124,7 +124,7 @@ public class GameController : MonoBehaviour
                 currentNumber = 12;
                 numberText.text = "12";
 
-                roundNumbers = new int[] { 2, 2, 2, 3, 4, 6 }; // kan lage funksjon for å forenkle
+                roundNumbers = new int[] { 2, 2, 2, 3, 4, 6 }; // kan lage funksjon for Ã¥ forenkle
 
                 PopulateLevel(roundNumbers, roundNumbers.Length); 
 
@@ -518,7 +518,7 @@ public class GameController : MonoBehaviour
         {
             tryAgainbutton.SetActive(true);
 
-            solutionText.text = "Prøv igjen!";
+            solutionText.text = "PrÃ¸v igjen!";
 
         }
 
@@ -542,13 +542,13 @@ public class GameController : MonoBehaviour
         {
             tryAgainbutton.SetActive(true);
 
-            solutionText.text = "Prøv igjen!";
+            solutionText.text = "PrÃ¸v igjen!";
 
         } else if (!solved && player == 0)
         {
             tryAgainbutton.SetActive(true);
 
-            solutionText.text = "Prøv igjen!";
+            solutionText.text = "PrÃ¸v igjen!";
 
         }
 
