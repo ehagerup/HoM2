@@ -197,33 +197,7 @@ public class GameController : MonoBehaviour
 
     void PopulateLevel(int[] allowedNumbers, int numberCount)
     {
-      //  GameObject instanced;
-
-       /* if (gameObjectsOnBoard.Count == 0) // if first number
-        {
-            instanced = Instantiate(numberPrefab);
-            instanced.transform.position = new UnityEngine.Vector2(Random.Range(-8, 8), Random.Range(-2, 4));
-            gameObjectsOnBoard.Add(instanced.transform.position, instanced.gameObject);
-
-        }*/
-
-
-
       
-          /*  instanced = Instantiate(numberPrefab);
-            instanced.transform.position = new UnityEngine.Vector2(Random.Range(-8, 8), Random.Range(-2, 4));
-
-
-        // CheckFreeSpot(instanced);
-
-        if (CheckFreeSpot(instanced) == true)
-            {
-                instanced.transform.position = new UnityEngine.Vector2(Random.Range(-8, 8), Random.Range(-2, 4));
-
-                CheckFreeSpot(instanced);
-            }
-
-            gameObjectsOnBoard.Add(instanced.transform.position, instanced.gameObject);*/
 
 
         
@@ -289,31 +263,7 @@ public class GameController : MonoBehaviour
    public bool CheckFreeSpot(GameObject instanced)
     {
 
-        /*  for (int i = 0; i < numberVectors.Count; i++)
-          {
-              if (instanced.transform.position.x == numberVectors[i].x) //check x
-              {
-                  //if X found, check y
-                  if (instanced.transform.position.y == numberVectors[i].y) //Both values are found
-                  {
-
-                      //Give new position
-
-
-                      return true;
-
-                      //check again
-
-
-
-
-                  }
-
-
-              }
-          }
-          return false;*/
-
+        
         foreach (KeyValuePair<UnityEngine.Vector2, GameObject> item in gameObjectsOnBoard)
         {
             if (instanced.transform.position.x == item.Value.transform.position.x) //Both values are found
@@ -329,7 +279,7 @@ public class GameController : MonoBehaviour
 
                     
 
-                //check again
+               
 
 
 
